@@ -1,3 +1,5 @@
+// This is a group project
+
 #include<iostream>
 #include<string>
 #include<fstream>
