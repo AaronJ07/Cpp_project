@@ -1,5 +1,8 @@
+// This is a group project
+
 #include<iostream>
 #include <bits/stdc++.h>
+
 using namespace std;
     char fullname[60];
     string piz1="Margherita Pizza" , piz2="Greek Pizza" , piz3="Roman Pizza" , piz4="Chicago Pizza";
