@@ -12,16 +12,23 @@ const int ARR_SIZE = 6;
 
 void shift_zero(int* arr)
 {
+    int temp = 0;
+
     for(int i = 0; i < ARR_SIZE; i++)
     {
-        for(int j = 0; j < i + 1; j++)
-            if(i == 0)
-            {
-                cout << arr[j] << endl;
-            }
-
-        cout << arr[i] << endl;
+        if(arr[i] != 0)
+        {
+            arr[temp] = arr[i];
+            temp++;
+        }
     }
+
+    while (temp < ARR_SIZE)
+    {
+        arr[temp] = 0;
+        temp++;
+    }
+    
 }
 
 int main()
@@ -30,5 +37,12 @@ int main()
 
     shift_zero(arr);
 
+    for(int i = 0; i < ARR_SIZE; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+    
     return 0;
 }
