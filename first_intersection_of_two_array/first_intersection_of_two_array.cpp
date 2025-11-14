@@ -17,6 +17,8 @@ const int ARR_SIZE = 6;
 
 void find_first_intersection(int* arr1, int* arr2)
 {
+    bool found = false;
+
     for(int i = 0; i < ARR_SIZE; i++)
     {
         for(int j = 0; j < ARR_SIZE; j++)
@@ -24,14 +26,15 @@ void find_first_intersection(int* arr1, int* arr2)
             if(arr1[i] == arr2[j])
             {
                 cout << "The first element that intersect in both arrays is: " << arr1[i] << endl;
+                found = true;
                 return;
             }
         }
     }
 
-    while(arr1[i] != arr2[j])
+    if(!found)
     {
-        cout << "No intersect in both arrays." << endl;
+        cout << "No intersect in both arrays" << endl;
     }
 }
 
