@@ -28,6 +28,11 @@ void find_first_intersection(int* arr1, int* arr2)
             }
         }
     }
+
+    while(arr1[i] != arr2[j])
+    {
+        cout << "No intersect in both arrays." << endl;
+    }
 }
 
 int main()
