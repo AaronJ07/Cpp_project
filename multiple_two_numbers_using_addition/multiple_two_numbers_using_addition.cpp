@@ -16,11 +16,16 @@ using namespace std;
 
 const int ARR_SIZE = 2;
 
+int multiple_two_numbers(int* arr)
+{
+    
+}
+
 int main()
 {
     int arr[ARR_SIZE] = {7 , 5};
 
-    
+
 
     return 0;
 }
