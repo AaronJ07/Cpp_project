@@ -23,8 +23,12 @@ int multiple_two_numbers(int a, int b)
         return 0;
     }
 
-    int multiple_recursion = multiple_two_numbers(a * b);
-    return multiple_recursion;
+    if(b <= 0)
+    {
+        return - multiple_two_numbers(a, -b);
+    }
+
+    return a + multiple_two_numbers(a, b - 1);
 }
 
 int main()
@@ -35,7 +39,7 @@ int main()
     cout << "Please enter another number: ";
     cin >> b;
 
-    multiple_two_numbers(a, b);
+    cout << "Result is: " << multiple_two_numbers(a, b) << endl;
 
     return 0;
 }
