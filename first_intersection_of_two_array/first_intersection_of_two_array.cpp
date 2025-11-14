@@ -32,7 +32,7 @@ void find_first_intersection(int* arr1, int* arr2)
         }
     }
 
-    if(!found)
+    if(found == false)
     {
         cout << "No intersect in both arrays" << endl;
     }
@@ -40,8 +40,8 @@ void find_first_intersection(int* arr1, int* arr2)
 
 int main()
 {
-    int arr1[ARR_SIZE] = {1, 2, 3, 4, 5, 6};
-    int arr2[ARR_SIZE] = {7, 8, 9, 0, 5, 6};
+    int arr1[ARR_SIZE] = {1, 2, 3, 4, 0, 4};
+    int arr2[ARR_SIZE] = {7, 8, 9, 0, 0, 0};
 
     find_first_intersection(arr1, arr2);
 
