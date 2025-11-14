@@ -14,7 +14,12 @@ You are not allowed to use *, /, or built-in multiplication functions.
 #include<iostream>
 using namespace std;
 
+const int ARR_SIZE = 2;
+
 int main()
 {
-    int 
+    int arr[ARR_SIZE];
+    cin >> arr;
+
+    return 0;
 }
