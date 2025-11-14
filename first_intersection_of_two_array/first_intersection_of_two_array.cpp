@@ -24,12 +24,10 @@ void find_first_intersection(int* arr1, int* arr2)
             if(arr1[i] == arr2[j])
             {
                 cout << "The first element that intersect in both arrays is: " << arr1[i] << endl;
-                break;
+                return 0;
             }
         }
     }
-
-    cout << "This two arrays no have element that intersect." << endl;
 }
 
 int main()
