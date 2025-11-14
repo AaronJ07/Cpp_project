@@ -10,3 +10,11 @@ Write a function that computes the product of a and b using only the + operator.
 You are not allowed to use *, /, or built-in multiplication functions.
 
 */
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int 
+}
