@@ -18,8 +18,9 @@ const int ARR_SIZE = 2;
 
 int main()
 {
-    int arr[ARR_SIZE];
-    cin >> arr;
+    int arr[ARR_SIZE] = {7 , 5};
+
+    
 
     return 0;
 }
