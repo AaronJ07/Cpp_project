@@ -1,7 +1,8 @@
 /*
 
 You are given a array of integers, for example [2, 1, 0, 8, 0, 7]. 
-Write a function that moves all the zeros to the end of the array while keeping the relative order of the non-zero elements the same.
+Write a function that moves all the zeros to the end of the array 
+while keeping the relative order of the non-zero elements the same.
 
 */
 
